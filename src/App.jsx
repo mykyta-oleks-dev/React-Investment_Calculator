@@ -11,7 +11,7 @@ function App() {
 	});
 
 	const handleDataChange = (key, value) => {
-		if (!(key in data) || value < 0) return;
+		if (!(key in data) || value < 1) return;
 		setData((data) => ({ ...data, [key]: parseInt(value) }));
 	};
 
